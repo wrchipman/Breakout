@@ -1,0 +1,43 @@
+[gd_scene load_steps=6 format=3 uid="uid://c6a4kbsxakb7n"]
+
+[ext_resource type="Script" uid="uid://di4tesdduqu87" path="res://main.gd" id="1_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://dkx4j7ftti6xl" path="res://player.tscn" id="1_ig7tw"]
+[ext_resource type="PackedScene" uid="uid://bfunllj16sd4u" path="res://wall.tscn" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cvl7grce2ihj5" path="res://out_of_bounds.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://cbyupsl0r5cjv" path="res://blocks.tscn" id="5_lquwl"]
+
+[node name="Main" type="Node2D"]
+script = ExtResource("1_0xm2m")
+
+[node name="Wall" parent="." instance=ExtResource("2_h2yge")]
+
+[node name="Player" parent="." instance=ExtResource("1_ig7tw")]
+
+[node name="OutOfBounds" parent="." instance=ExtResource("4_1bvp3")]
+position = Vector2(23, 927)
+
+[node name="Blocks" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(1035, 150)
+
+[node name="Blocks2" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(812, 104)
+
+[node name="Blocks3" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(505, 140)
+
+[node name="Blocks4" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(711, 131)
+
+[node name="Blocks5" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(610, 175)
+
+[node name="Blocks6" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(349, 215)
+
+[node name="Blocks7" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(266, 154)
+
+[node name="Blocks8" parent="." instance=ExtResource("5_lquwl")]
+position = Vector2(163, 148)
+
+[connection signal="body_entered" from="OutOfBounds" to="." method="_on_out_of_bounds_body_entered"]
