@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbyupsl0r5cjv"]
+
+[ext_resource type="Script" uid="uid://bno03u0gjgdme" path="res://Scripts/blocks.gd" id="1_7odni"]
+[ext_resource type="Texture2D" uid="uid://gkhvqdl3blq" path="res://Sprites/PinkSquare.png" id="2_ts78p"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3oe6e"]
+size = Vector2(81, 24)
+
+[node name="Blocks" type="StaticBody2D" groups=["blocks"]]
+collision_layer = 16
+script = ExtResource("1_7odni")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(30, 4)
+scale = Vector2(5.0625, 1.5)
+texture = ExtResource("2_ts78p")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(30, 4)
+shape = SubResource("RectangleShape2D_3oe6e")
+
+[connection signal="tree_exited" from="." to="." method="_on_tree_exited"]

@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://j5s75tglykla"
-path="res://.godot/imported/SimpleBall.png-74ffc6c4dba129a60d3fcbb63892724f.ctex"
+path="res://.godot/imported/SimpleBall.png-1629930aa2857fe82d26a9295cbf48ae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://SimpleBall.png"
-dest_files=["res://.godot/imported/SimpleBall.png-74ffc6c4dba129a60d3fcbb63892724f.ctex"]
+source_file="res://Sprites/SimpleBall.png"
+dest_files=["res://.godot/imported/SimpleBall.png-1629930aa2857fe82d26a9295cbf48ae.ctex"]
 
 [params]
 
